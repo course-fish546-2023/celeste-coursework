@@ -7,6 +7,7 @@ output: html_document
 
 # Week 01 Question Set
 ### What is your prior experience in this discipline?
+None. I haven't had much -omics experience at all. I have looked at a set of genes of interest and looked at differences in expression in a defined gene list but haven't looked at whole transcript output.
 
 ### What do you hope to get out of this class?
 
