@@ -1,0 +1,16 @@
+---
+title: "Blast"
+output: html_document
+date: "2023-03-30"
+---
+
+# BLAST
+This assignment is for FISH 546.
+-----------------
+Below is the session info for this markdown file created in jupyter R studio server.
+```{r, echo=TRUE}
+sessionInfo()
+```
+
+# Download Stand-alone BLAST
+
