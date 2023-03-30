@@ -13,4 +13,9 @@ sessionInfo()
 ```
 
 # Download Stand-alone BLAST
+downloaded software: https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/
+
+```{bash}
+cd applications
+```
 
