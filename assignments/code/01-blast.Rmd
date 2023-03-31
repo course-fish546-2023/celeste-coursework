@@ -7,7 +7,7 @@ date: "2023-03-30"
 # BLAST
 This assignment is for FISH 546.
 -----------------
-Below is the session info for this markdown file created in jupyter R studio server.
+Below is the session info for this markdown file created in jupyter Rstudio server.
 ```{r, echo=TRUE}
 sessionInfo()
 ```
@@ -19,6 +19,7 @@ cd ~/applications
 curl -O https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.13.0+-x64-linux.tar.gz
 ```
 
+the bash command "tar" will unzip the file
 ```{bash}
 tar -xf ncbi-blast-2.13.0+-x64-linux.tar.gz
 ```
@@ -29,8 +30,7 @@ tar -xf ncbi-blast-2.13.0+-x64-linux.tar.gz
 ```
 
 # Make a BLAST database
-I made created a database from uniprot_sprot_r2021_03 instead of 2023_01 like in the described in the homework assignment.
-```{bash}
+
 ```{bash}
 cd ../data
 curl -O https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
@@ -38,7 +38,7 @@ mv uniprot_sprot.fasta.gz uniprot_sprot_r2023_01.fasta.gz
 gunzip -k uniprot_sprot_r2023_01.fasta.gz
 ls ../data
 ```
-```
+
 
 ```{bash}
 ~/applications/ncbi-blast-2.13.0+/bin/makeblastdb \
@@ -80,4 +80,6 @@ wc -l ../output/Ab_4-uniprot_blastx.tab
 curl -O "Accept: text/plain; format=tsv" "https://rest.uniprot.org/uniprotkb/search?query=reviewed:true+AND+organism_id:9606"
 ```
 
-
+```{bash}
+curl -O -H "Accept: text/plain; format=tsv" "https://rest.uniprot.org/uniprotkb/stream?compressed=true&fields=accession%2Creviewed%2Cid%2Cprotein_name%2Cgene_names%2Corganism_name%2Clength%2Cgo_f%2Cgo%2Cgo_p%2Cgo_c%2Cgo_id%2Ccc_interaction%2Cec%2Cxref_reactome%2Cxref_unipathway%2Cxref_interpro&format=tsv&query=%28%2A%29%20AND%20%28reviewed%3Atrue%29"
+```
