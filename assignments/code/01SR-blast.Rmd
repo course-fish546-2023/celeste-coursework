@@ -1,0 +1,132 @@
+---
+title: "Blast"
+output: html_document
+date: "2023-03-30"
+---
+
+# BLAST
+This assignment is for FISH 546.
+-----------------
+Below is the session info for this markdown file created in jupyter Rstudio server.
+```{r, echo=TRUE}
+sessionInfo()
+```
+
+# Download Stand-alone BLAST
+downloaded software:
+```{bash}
+cd ~/applications
+curl -O https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.13.0+-x64-linux.tar.gz
+```
+
+
+
+the bash command "tar" will unzip the file
+&&& this will not work as you have to navigate to dir first....
+
+```{bash}
+cd ~/applications # sr added
+tar -xf ncbi-blast-2.13.0+-x64-linux.tar.gz
+```
+
+
+```{bash}
+~/applications/ncbi-blast-2.13.0+/bin/blastx -h
+```
+
+# Make a BLAST database
+
+```{bash}
+cd ../data
+curl -O https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
+mv uniprot_sprot.fasta.gz uniprot_sprot_r2023_01.fasta.gz
+gunzip -k uniprot_sprot_r2023_01.fasta.gz
+ls ../data
+```
+
+
+```{bash}
+~/applications/ncbi-blast-2.13.0+/bin/makeblastdb \
+-in ../data/uniprot_sprot_r2023_01.fasta \
+-dbtype prot \
+-out ../blastdb/uniprot_sprot_r2023_01
+```
+### Get query sequence
+
+```{bash}
+curl https://eagle.fish.washington.edu/cnidarian/Ab_4denovo_CLC6_a.fa \
+-k \
+> ../data/Ab_4denovo_CLC6_a.fa
+```
+
+```{bash}
+head ../data/Ab_4denovo_CLC6_a.fa
+echo "How many sequences are there?"
+grep -c ">" ../data/Ab_4denovo_CLC6_a.fa
+```
+# Running BLAST
+```{bash}
+~/applications/ncbi-blast-2.13.0+/bin/blastx \
+-query ../data/Ab_4denovo_CLC6_a.fa \
+-db ../blastdb/uniprot_sprot_r2023_01 \
+-out ../output/Ab_4-uniprot_blastx.tab \
+-evalue 1E-20 \
+-num_threads 20 \
+-max_target_seqs 1 \
+-outfmt 6
+```
+
+```{bash}
+head -2 ../output/Ab_4-uniprot_blastx.tab
+wc -l ../output/Ab_4-uniprot_blastx.tab
+```
+
+
+
+# Joining blast table with annotation table
+```{bash}
+head -2 ../output/Ab_4-uniprot_blastx.tab
+wc -l ../output/Ab_4-uniprot_blastx.tab
+```
+
+```{bash}
+tr '|' '\t' < ../output/Ab_4-uniprot_blastx.tab | head -2
+```
+```{bash}
+tr '|' '\t' < ../output/Ab_4-uniprot_blastx.tab \
+> ../output/Ab_4-uniprot_blastx_sep.tab
+```
+
+
+```{r}
+install.packages("curl")
+```
+
+```{r}
+library("curl")
+```
+
+
+
+
+```{r}
+# requirements
+library(tidyverse)
+#creating my blast table as an object
+bltabl <- read.csv("../output/Ab_4-uniprot_blastx_sep.tab", sep = '\t', header = FALSE)
+#reading in annotation table and saving as object
+library(httr)
+url <- "https://gannet.fish.washington.edu/seashell/snaps/uniprot_table_r2023_01.tab"
+response <- GET(url, config(ssl_verifypeer = FALSE))
+spgo <- read.csv(text = rawToChar(response$content), sep = "\t", header = TRUE)
+
+
+```
+
+```{r}
+left_join(bltabl, spgo,  by = c("V3" = "Entry")) %>%
+  select(V1, V3, V13, Protein.names, Organism, Gene.Ontology..biological.process., Gene.Ontology.IDs) %>% mutate(V1 = str_replace_all(V1, 
+            pattern = "solid0078_20110412_FRAG_BC_WHITE_WHITE_F3_QV_SE_trimmed", replacement = "Ab")) %>%
+  write_delim("../output/blast_annot_go.tab", delim = '\t')
+
+```
