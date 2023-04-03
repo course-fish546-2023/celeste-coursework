@@ -1,0 +1,22 @@
+---
+title: "Week 02"
+author: "Celeste Valdivia"
+date: '2023-04-03'
+output: md_document
+---
+## Week 02 Question Set
+
+a)  **What do you feel was the most impressive thing you did in class last week was?**
+The most impressive thing I did in class last week was troubleshooting git to uncommit changes that had not been pushed yet that were too large to push to git on the R Studio Server. Using git commits to return to an old version of my workspace would not work on the R Studio server as it could not identify what the main branch was. Eventually, I just re-cloned the repository after deleting the one with unpushable commits.
+ 
+b)  **What is your weekly goal for making progress on your project? What is the next step?**
+I am looking into whether I can source RNAseq data from a previous transcriptome based paper on *Botryllus schlosseri* and then exploring that data and creating metadata for it. 
+
+c)  **There were two readings this week not from the textbook, meant for two different audiences. Which reading did you get the most out of and why? Do you have any questions regarding the Journal of Shellfish Research paper?**
+
+
+d)  **What is your favorite thing about markdown and why?**
+My favorite thing about markdown is that it is a very intuitive and simple to use text editor. Using Rmarkdown in particular is very useful to integrate code chunks into your writing.
+
+e) **What is the difference between `curl` and `wget`? When would you used one over the other?**
+In bash, curl is to pull data from a url based source. 
