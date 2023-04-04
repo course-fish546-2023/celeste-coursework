@@ -3,5 +3,5 @@
 .RData
 .Ruserdata
 assignments/blastdb
-.fastq.gz
-.index
+*.fastq.gz
+*.index
