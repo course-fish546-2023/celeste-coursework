@@ -13,10 +13,10 @@ b)  **What is your weekly goal for making progress on your project? What is the 
 I am looking into whether I can source RNAseq data from a previous transcriptome based paper on *Botryllus schlosseri* and then exploring that data and creating metadata for it. 
 
 c)  **There were two readings this week not from the textbook, meant for two different audiences. Which reading did you get the most out of and why? Do you have any questions regarding the Journal of Shellfish Research paper?**
-
+I feel like I got the most out of the Journal of Shellfish Research paper since it gives a broad scale overview of the process of initiating functional genomics experiments and the type of products that may result from one. Although I would more likely refer to the other webpage reading in the future as it has a lot of valuable tools I would be interested in trying.
 
 d)  **What is your favorite thing about markdown and why?**
-My favorite thing about markdown is that it is a very intuitive and simple to use text editor. Using Rmarkdown in particular is very useful to integrate code chunks into your writing.
+My favorite thing about markdown is that it is a very intuitive and simple to use text editor. Using Rmarkdown in particular is very useful to integrate code chunks into your writing. 
 
 e) **What is the difference between `curl` and `wget`? When would you used one over the other?**
-In bash, curl is to pull data from a url based source. 
+wget is used for downloading data from webpages or websites. curl on the other hand is for retrieving files or data from any url source.
