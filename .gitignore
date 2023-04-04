@@ -5,3 +5,6 @@
 assignments/blastdb
 *.fastq.gz
 *.index
+*.h5
+*.json
+abundance.tsv
