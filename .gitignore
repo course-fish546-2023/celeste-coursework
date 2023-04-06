@@ -8,3 +8,4 @@ assignments/blastdb
 *.h5
 *.json
 abundance.tsv
+*.fna
