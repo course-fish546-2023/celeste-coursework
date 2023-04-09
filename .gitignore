@@ -3,4 +3,12 @@
 .RData
 .Ruserdata
 assignments/blastdb
-assignments/data
+*.fastq.gz
+*.index
+*.h5
+*.json
+*.fasta
+*.fasta.gz
+*.fa
+abundance.tsv
+*.fna
