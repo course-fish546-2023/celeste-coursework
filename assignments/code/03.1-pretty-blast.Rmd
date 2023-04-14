@@ -1,0 +1,143 @@
+---
+title: "Using NCBI BLAST"
+subtitle: "Taking a set of unknown sequence files and annotating them"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    toc: true
+    toc_float: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+library(tidyverse)
+library(kableExtra)
+library(DT)
+library(tm)
+knitr::opts_chunk$set(
+  echo = TRUE,         # Display code chunks
+  eval = FALSE,         # Setting this to false will allow us to knit the codument without evaluating code chunks
+  warning = FALSE,     # Hide warnings
+  message = FALSE,     # Hide messages
+  fig.width = 6,       # Set plot width in inches
+  fig.height = 4,      # Set plot height in inches
+  fig.align = "center" # Align plots to the center
+)
+```
+
+-----------------
+Below is the session info for this markdown file created in jupyter Rstudio server.
+```{r, echo=TRUE}
+sessionInfo()
+```
+
+# Download Stand-alone BLAST
+If you already have the NCBI Blast software installed, you can skip this step. If you don't have this software installed make sure to put it in a central location, below I put it in an applications folder I have on my home directory.
+```{r, engine='bash'}
+cd ~/applications
+curl -O https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.13.0+-x64-linux.tar.gz
+tar -xf ncbi-blast-2.13.0+-x64-linux.tar.gz
+
+```
+
+```{r, engine = 'bash'}
+~/applications/ncbi-blast-2.13.0+/bin/blastx -h
+```
+
+# Make a BLAST database
+Below we will be making a database in the data directory and verifying that it's there.
+```{r download-data, engine='bash'}
+cd ../data
+curl -O https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
+mv uniprot_sprot.fasta.gz uniprot_sprot_r2023_01.fasta.gz
+gunzip -k uniprot_sprot_r2023_01.fasta.gz
+ls ../data
+```
+
+```{r, engine = 'bash'}
+~/applications/ncbi-blast-2.13.0+/bin/makeblastdb \
+-in ../data/uniprot_sprot_r2023_01.fasta \
+-dbtype prot \
+-out ../blastdb/uniprot_sprot_r2023_01
+```
+
+### Get query sequence
+Next we will curl our query sequence and save it in our data directory.
+```{r, engine= 'bash'}
+curl https://eagle.fish.washington.edu/cnidarian/Ab_4denovo_CLC6_a.fa \
+-k \
+> ../data/Ab_4denovo_CLC6_a.fa
+```
+
+The following code chunk will help us explore the first few lines in the fasta file we accessed.
+```{r, engine= 'bash'}
+head ../data/Ab_4denovo_CLC6_a.fa
+echo "How many sequences are there?"
+grep -c ">" ../data/Ab_4denovo_CLC6_a.fa
+```
+
+
+# Running BLAST
+Next we will use the BLAST software we downloaded and run the query command with our seqeuence and the db command with the database we generated. The output will result in a .tab file that contains our BLAST results.
+```{r, engine = 'bash'}
+~/applications/ncbi-blast-2.13.0+/bin/blastx \
+-query ../data/Ab_4denovo_CLC6_a.fa \
+-db ../blastdb/uniprot_sprot_r2023_01 \
+-out ../output/Ab_4-uniprot_blastx.tab \
+-evalue 1E-20 \
+-num_threads 20 \
+-max_target_seqs 1 \
+-outfmt 6
+```
+
+Here we explore the output we just generated.
+```{r, engine= 'bash'}
+head -2 ../output/Ab_4-uniprot_blastx.tab
+wc -l ../output/Ab_4-uniprot_blastx.tab
+```
+
+
+
+# Joining BLAST table with annotation table
+Next we will join the BLAST table we just generated with the annotation table
+
+```{r, engine = 'bash'}
+tr '|' '\t' < ../output/Ab_4-uniprot_blastx.tab | head -2
+
+# replace the "|" with "\t" in the file "Ab_4-uniprot_blastx.tab"
+# and save the output to the file "Ab_4-uniprot_blastx_sep.tab"
+
+tr '|' '\t' < ../output/Ab_4-uniprot_blastx.tab \
+> ../output/Ab_4-uniprot_blastx_sep.tab
+```
+
+```{r, engine = 'bash'}
+head -2 ../data/uniprot_table_r2023_01.tab
+wc -l ../data/uniprot_table_r2023_01.tab
+```
+
+Now we will use R to finish making our table:
+```{r}
+# requirements
+library(tidyverse)
+#creating my blast table as an object
+bltabl <- read.csv("../output/Ab_4-uniprot_blastx_sep.tab", sep = '\t', header = FALSE)
+#reading in annotation table and saving as object
+library(httr)
+url <- "https://gannet.fish.washington.edu/seashell/snaps/uniprot_table_r2023_01.tab"
+response <- GET(url, config(ssl_verifypeer = FALSE))
+spgo <- read.csv(text = rawToChar(response$content), sep = "\t", header = TRUE)
+
+
+```
+
+```{r}
+left_join(bltabl, spgo,  by = c("V3" = "Entry")) %>%
+  select(V1, V3, V13, Protein.names, Organism, Gene.Ontology..biological.process., Gene.Ontology.IDs) %>% mutate(V1 = str_replace_all(V1, 
+            pattern = "solid0078_20110412_FRAG_BC_WHITE_WHITE_F3_QV_SE_trimmed", replacement = "Ab")) %>%
+  write_delim("../output/blast_annot_go.tab", delim = '\t')
+
+```
