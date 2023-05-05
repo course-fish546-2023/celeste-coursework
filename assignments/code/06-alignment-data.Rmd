@@ -86,65 +86,50 @@ Next we are create a bam file from the sam file
 -o ../output/F143_cgigas.sorted.bam 
 /home/shared/samtools-1.12/samtools index ../output/F143_cgigas.sorted.bam
 ```
+When done making the BAM files, delete the SAM files to free up space on device so you can proceed to the next step without hiccups.
 
-## Using bcftools's mpileup to create mapping scores..
-
-
+## Using mpileup to make a vcf file for visualization in IGV
+Did this but couldn't get the txt file to be used towards making a vcf.gz file. Just made a vcf.gz file directly,
 
 ```{r, engine ='bash'}
 #!/bin/bash
+## I leave in the code chunk because it does work well, just not used in the following workflow:
 
 # loop through all sorted.bam files
-for file in ../output/*.sorted.bam; do
+#for file in ../output/*.sorted.bam; do
 
     # get the sample name from the filename
-    sample=$(basename $file .sorted.bam)
+#    sample=$(basename $file .sorted.bam)
 
     # run mpileup
-    /home/shared/bcftools-1.14/bcftools mpileup --threads 4 --no-BAQ \
-    --fasta-ref ../data/cgigas_uk_roslin_v1_genomic-mito.fa \
-    $file > ../output/${sample}_mpileup_output.txt
-done
+ #   /home/shared/bcftools-1.14/bcftools mpileup --threads 4 --no-BAQ \
+#    --fasta-ref ../data/cgigas_uk_roslin_v1_genomic-mito.fa \
+#    $file > ../output/${sample}_mpileup_output.txt
+#done
 
 ```
 
-
-
-#### SR code
+```{r, engine='bash'}
+#tail ../output/F143_cgigas_mpileup_output.txt
+```
+Skipping the txt file to vcf.gz and making a vcf.gz file directly from the sorted.bam files:
 ```{r, engine='bash'}
 /home/shared/bcftools-1.14/bcftools mpileup --threads 4 --no-BAQ \
 --fasta-ref ../data/cgigas_uk_roslin_v1_genomic-mito.fa \
-../output/F143_cgigas.sorted.bam > ../output/F143_mpileup_output.txt
+../output/*.sorted.bam | /home/shared/bcftools-1.14/bcftools call -Oz -v -m -o ../output/F143_mpile.vcf.gz
 ```
 
-```{r, engine='bash'}
-tail ../output/F143_cgigas_mpileup_output.txt
-```
-
-```{r, engine='bash'}
-/home/shared/bcftools-1.14/bcftools call -Oz -v -m ../output/F143_cgigas_mpileup_output.txt > ../output/F143_mpile.vcf.gz
-```
-
-
+You can take a look at what's in the file here:
 ```{r, engine='bash'}
 zgrep "^##" -v ../output/F143_mpile.vcf.gz | \
 awk 'BEGIN{OFS="\t"} {split($8, a, ";"); print $1,$2,$4,$5,$6,a[1],$9,$10}' | head
 
 ```
 
-
+Now we convert the vcf.gz file to a vcf file using the call command, but the vcf.gz file itself is truncated since there is not much room left on my current device.
 ```{r, engine='bash'}
 /home/shared/bcftools-1.14/bcftools call \
 -v -c ../output/F143_mpile.vcf.gz \
 > ../output/F143_mpile_calls.vcf
 ```
-
-
-#### chat gpt version
-```{r, engine='bash'}
-/home/shared/bcftools-1.14/bcftools mpileup --threads 4 --no-BAQ \
---fasta-ref ../data/cgigas_uk_roslin_v1_genomic-mito.fa \
-../output/*.sorted.bam | /home/shared/bcftools-1.14/bcftools call -Oz -v -m -o ../output/F143_mpile.vcf.gz
-```
-``
 
