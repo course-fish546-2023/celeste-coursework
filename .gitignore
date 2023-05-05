@@ -12,3 +12,9 @@ assignments/blastdb
 *.fa
 abundance.tsv
 *.fna
+*.gz
+*.bam
+*.bai
+*.txt
+*.gtf
+*.fai
