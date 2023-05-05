@@ -113,5 +113,13 @@ the vcf.gz file itself is truncated since there is not much room left on
 my current device.
 
     /home/shared/bcftools-1.14/bcftools call \
-    -v -c ../output/F143_mpile.vcf.gz \
+    -v -c - f ../output/F143_mpile.vcf.gz \
     > ../output/F143_mpile_calls.vcf
+
+Inputting the reference genome, bam file, and vcf file into IGV I get
+the following where it reports that there are no variants found. I
+suspect it has to do with the fact that download of the file was
+truncated due to a lack of space on my current device. I will be
+re-running the code later on to try to get the files to fully download.
+
+![IGV](https://github.com/course-fish546-2023/celeste-coursework/blob/main/igv%20screenshot.png?raw=true)
