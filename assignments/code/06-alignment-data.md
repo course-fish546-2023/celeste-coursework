@@ -1,0 +1,117 @@
+# Task 1
+
+Curling in sorted.bam files:
+
+    cd ../data
+    curl -O https://gannet.fish.washington.edu/seashell/bu-mox/scrubbed/120321-cvBS/19F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam
+    curl -O https://gannet.fish.washington.edu/seashell/bu-mox/scrubbed/120321-cvBS/19F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam.bai
+
+Curling in reference genome:
+
+    cd ../data
+    curl -O https://gannet.fish.washington.edu/seashell/bu-mox/data/Cvirg-genome/GCF_002022765.2_C_virginica-3.0_genomic.fa
+    curl -O https://gannet.fish.washington.edu/seashell/bu-mox/data/Cvirg-genome/GCF_002022765.2_C_virginica-3.0_genomic.fa.fai
+
+Using tview to quickly take a peak at the sorted.bam file and genome
+(looking at alignment data against genome)
+
+    /home/shared/samtools-1.12/samtools tview \
+    ../data/19F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam \
+    ../data/GCF_002022765.2_C_virginica-3.0_genomic.fa
+
+![tview
+screenshot](https://github.com/course-fish546-2023/celeste-coursework/blob/main/week-06-tview.png?raw=true)
+
+# Task 2
+
+## Creating bam files
+
+For this task we will align RNAseq data to a reference genome using
+HISat2 and then proceed to visualize it with IGV.
+
+Fist we download the fastq files:
+
+    cd ../data
+    curl -O https://owl.fish.washington.edu/nightingales/C_gigas/F143n08_R2_001.fastq.gz
+    curl -O https://owl.fish.washington.edu/nightingales/C_gigas/F143n08_R1_001.fastq.gz
+
+Next we download some genome references:
+
+    cd ../data
+    curl -O https://gannet.fish.washington.edu/panopea/Cg-roslin/cgigas_uk_roslin_v1_genomic-mito.fa
+    curl -O https://gannet.fish.washington.edu/panopea/Cg-roslin/cgigas_uk_roslin_v1_genomic-mito.fa.fai
+    curl -O https://gannet.fish.washington.edu/panopea/Cg-roslin/GCF_902806645.1_cgigas_uk_roslin_v1_genomic-mito.gtf
+
+Creating reference index using the gtf file with HISat2
+
+    /home/shared/hisat2-2.2.1/hisat2-build \
+    -f ../data/cgigas_uk_roslin_v1_genomic-mito.fa \
+    ../output/cgigas_uk_roslin_v1_genomic-mito.index
+
+Alignment of the RNAseq data with hisat2:
+
+    /home/shared/hisat2-2.2.1/hisat2 \
+    -x ../output/cgigas_uk_roslin_v1_genomic-mito.index \
+    -p 4 \
+    -1 ../data/F143n08_R1_001.fastq.gz \
+    -2 ../data/F143n08_R2_001.fastq.gz \
+    -S ../output/F143_cgigas.sam
+
+Peaking at the alignment data (SAM file format):
+
+    tail -1 ../output/F143_cgigas.sam
+
+Next we are create a bam file from the sam file
+
+    /home/shared/samtools-1.12/samtools view \
+    -@ 7 \
+    -Su ../output/F143_cgigas.sam \
+    | /home/shared/samtools-1.12/samtools sort - \
+    -@ 7 \
+    -o ../output/F143_cgigas.sorted.bam 
+    /home/shared/samtools-1.12/samtools index ../output/F143_cgigas.sorted.bam
+
+When done making the BAM files, delete the SAM files to free up space on
+device so you can proceed to the next step without hiccups.
+
+## Using mpileup to make a vcf file for visualization in IGV
+
+Did this but couldn’t get the txt file to be used towards making a
+vcf.gz file. Just made a vcf.gz file directly,
+
+    #!/bin/bash
+    ## I leave in the code chunk because it does work well, just not used in the following workflow:
+
+    # loop through all sorted.bam files
+    #for file in ../output/*.sorted.bam; do
+
+        # get the sample name from the filename
+    #    sample=$(basename $file .sorted.bam)
+
+        # run mpileup
+     #   /home/shared/bcftools-1.14/bcftools mpileup --threads 4 --no-BAQ \
+    #    --fasta-ref ../data/cgigas_uk_roslin_v1_genomic-mito.fa \
+    #    $file > ../output/${sample}_mpileup_output.txt
+    #done
+
+    #tail ../output/F143_cgigas_mpileup_output.txt
+
+Skipping the txt file to vcf.gz and making a vcf.gz file directly from
+the sorted.bam files:
+
+    /home/shared/bcftools-1.14/bcftools mpileup --threads 4 --no-BAQ \
+    --fasta-ref ../data/cgigas_uk_roslin_v1_genomic-mito.fa \
+    ../output/*.sorted.bam | /home/shared/bcftools-1.14/bcftools call -Oz -v -m -o ../output/F143_mpile.vcf.gz
+
+You can take a look at what’s in the file here:
+
+    zgrep "^##" -v ../output/F143_mpile.vcf.gz | \
+    awk 'BEGIN{OFS="\t"} {split($8, a, ";"); print $1,$2,$4,$5,$6,a[1],$9,$10}' | head
+
+Now we convert the vcf.gz file to a vcf file using the call command, but
+the vcf.gz file itself is truncated since there is not much room left on
+my current device.
+
+    /home/shared/bcftools-1.14/bcftools call \
+    -v -c ../output/F143_mpile.vcf.gz \
+    > ../output/F143_mpile_calls.vcf
