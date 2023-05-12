@@ -64,3 +64,15 @@ Using the fuzznuc program to search for the pattern CG in the 10 random sequence
 ```{bash}
 fuzznuc -sequence ../output/output.fasta -pattern CG -rformat gff -outfile ../output/CGoutput.gff
 ```
+
+After having run fuzznuc and produced a CG output file, we can push that file to GitHub. This way we can read it into our local IGV software via the GitHub URL. 
+
+You will also need to read in the reference genome or reference transcriptome (fasta format) into IGV so we have something to compare the CG motif output file to. I used the *Botryllus schlosseri* reference transcriptome that I used in all my other analyses in this course.
+
+Below are some screenshots of the IGV visualization of the CG motif file we just made:
+
+Close up:
+![](https://github.com/course-fish546-2023/celeste-coursework/blob/main/assignments/close_up_igv.png?raw=true)
+
+Birds eye view:
+![](https://github.com/course-fish546-2023/celeste-coursework/blob/main/assignments/igv_panel.png?raw=true)

@@ -1,0 +1,56 @@
+Looking at reference transcriptome generated from NCBI.
+
+    # Replace 'input.fasta' with the name of your multi-sequence fasta file
+    input_file <- "/home/shared/8TB_HDD_02/cvaldi/celeste-tunicate-devo/data/sequence.fasta"
+    sequences <- read.fasta(input_file)
+
+Pulling 10 random sequences from that fasta file.
+
+    # Set the seed for reproducibility (optional)
+    set.seed(42)
+
+    number_of_sequences_to_select <- 10
+
+    if (length(sequences) < number_of_sequences_to_select) {
+      warning("There are fewer than 10 sequences in the fasta file. All sequences will be selected.")
+      number_of_sequences_to_select <- length(sequences)
+    }
+
+    selected_indices <- sample(length(sequences), number_of_sequences_to_select)
+    selected_sequences <- sequences[selected_indices]
+
+Saving that info in an output.fasta file in the output directory.
+
+    # Replace 'output.fasta' with your desired output file name
+    output_file <- "../output/output.fasta"
+    write.fasta(selected_sequences, names(selected_sequences), output_file, open = "w")
+
+Using samtols faidx command to index the fasta file to used in
+downstream IGV visualization.
+
+    #needed downstream for IGV
+    /home/shared/samtools-1.12/samtools faidx \
+    ../output/output.fasta
+
+Using the fuzznuc program to search for the pattern CG in the 10 random
+sequences from the reference transcriptome file.
+
+    fuzznuc -sequence ../output/output.fasta -pattern CG -rformat gff -outfile ../output/CGoutput.gff
+
+After having run fuzznuc and produced a CG output file, we can push that
+file to GitHub. This way we can read it into our local IGV software via
+the GitHub URL.
+
+You will also need to read in the reference genome or reference
+transcriptome (fasta format) into IGV so we have something to compare
+the CG motif output file to. I used the *Botryllus schlosseri* reference
+transcriptome that I used in all my other analyses in this course.
+
+Below are some screenshots of the IGV visualization of the CG motif file
+we just made:
+
+Close up:
+![](https://github.com/course-fish546-2023/celeste-coursework/blob/main/assignments/close_up_igv.png?raw=true)
+
+Birds eye view:
+![](https://github.com/course-fish546-2023/celeste-coursework/blob/main/assignments/igv_panel.png?raw=true)
