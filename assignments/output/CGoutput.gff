@@ -1,0 +1,468 @@
+##gff-version 3
+##sequence-region JG330512.1 1 794
+#!Date 2023-05-11
+#!Type DNA
+#!Source-version EMBOSS 6.6.0.0
+JG330512.1	fuzznuc	nucleotide_motif	17	18	2	+	.	ID=JG330512.1.1;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	28	29	2	+	.	ID=JG330512.1.2;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	30	31	2	+	.	ID=JG330512.1.3;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	80	81	2	+	.	ID=JG330512.1.4;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	90	91	2	+	.	ID=JG330512.1.5;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	95	96	2	+	.	ID=JG330512.1.6;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	101	102	2	+	.	ID=JG330512.1.7;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	120	121	2	+	.	ID=JG330512.1.8;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	123	124	2	+	.	ID=JG330512.1.9;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	129	130	2	+	.	ID=JG330512.1.10;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	134	135	2	+	.	ID=JG330512.1.11;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	137	138	2	+	.	ID=JG330512.1.12;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	146	147	2	+	.	ID=JG330512.1.13;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	152	153	2	+	.	ID=JG330512.1.14;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	159	160	2	+	.	ID=JG330512.1.15;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	179	180	2	+	.	ID=JG330512.1.16;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	188	189	2	+	.	ID=JG330512.1.17;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	195	196	2	+	.	ID=JG330512.1.18;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	200	201	2	+	.	ID=JG330512.1.19;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	225	226	2	+	.	ID=JG330512.1.20;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	230	231	2	+	.	ID=JG330512.1.21;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	240	241	2	+	.	ID=JG330512.1.22;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	248	249	2	+	.	ID=JG330512.1.23;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	252	253	2	+	.	ID=JG330512.1.24;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	260	261	2	+	.	ID=JG330512.1.25;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	270	271	2	+	.	ID=JG330512.1.26;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	272	273	2	+	.	ID=JG330512.1.27;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	275	276	2	+	.	ID=JG330512.1.28;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	279	280	2	+	.	ID=JG330512.1.29;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	297	298	2	+	.	ID=JG330512.1.30;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	303	304	2	+	.	ID=JG330512.1.31;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	315	316	2	+	.	ID=JG330512.1.32;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	318	319	2	+	.	ID=JG330512.1.33;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	323	324	2	+	.	ID=JG330512.1.34;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	334	335	2	+	.	ID=JG330512.1.35;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	338	339	2	+	.	ID=JG330512.1.36;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	342	343	2	+	.	ID=JG330512.1.37;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	371	372	2	+	.	ID=JG330512.1.38;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	375	376	2	+	.	ID=JG330512.1.39;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	380	381	2	+	.	ID=JG330512.1.40;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	392	393	2	+	.	ID=JG330512.1.41;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	398	399	2	+	.	ID=JG330512.1.42;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	404	405	2	+	.	ID=JG330512.1.43;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	414	415	2	+	.	ID=JG330512.1.44;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	418	419	2	+	.	ID=JG330512.1.45;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	425	426	2	+	.	ID=JG330512.1.46;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	432	433	2	+	.	ID=JG330512.1.47;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	443	444	2	+	.	ID=JG330512.1.48;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	450	451	2	+	.	ID=JG330512.1.49;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	462	463	2	+	.	ID=JG330512.1.50;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	485	486	2	+	.	ID=JG330512.1.51;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	491	492	2	+	.	ID=JG330512.1.52;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	495	496	2	+	.	ID=JG330512.1.53;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	501	502	2	+	.	ID=JG330512.1.54;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	509	510	2	+	.	ID=JG330512.1.55;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	516	517	2	+	.	ID=JG330512.1.56;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	529	530	2	+	.	ID=JG330512.1.57;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	534	535	2	+	.	ID=JG330512.1.58;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	542	543	2	+	.	ID=JG330512.1.59;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	549	550	2	+	.	ID=JG330512.1.60;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	563	564	2	+	.	ID=JG330512.1.61;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	572	573	2	+	.	ID=JG330512.1.62;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	576	577	2	+	.	ID=JG330512.1.63;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	587	588	2	+	.	ID=JG330512.1.64;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	590	591	2	+	.	ID=JG330512.1.65;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	597	598	2	+	.	ID=JG330512.1.66;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	609	610	2	+	.	ID=JG330512.1.67;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	614	615	2	+	.	ID=JG330512.1.68;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	632	633	2	+	.	ID=JG330512.1.69;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	647	648	2	+	.	ID=JG330512.1.70;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	653	654	2	+	.	ID=JG330512.1.71;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	656	657	2	+	.	ID=JG330512.1.72;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	663	664	2	+	.	ID=JG330512.1.73;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	672	673	2	+	.	ID=JG330512.1.74;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	693	694	2	+	.	ID=JG330512.1.75;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	698	699	2	+	.	ID=JG330512.1.76;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	708	709	2	+	.	ID=JG330512.1.77;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	719	720	2	+	.	ID=JG330512.1.78;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	726	727	2	+	.	ID=JG330512.1.79;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	741	742	2	+	.	ID=JG330512.1.80;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	750	751	2	+	.	ID=JG330512.1.81;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	758	759	2	+	.	ID=JG330512.1.82;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	768	769	2	+	.	ID=JG330512.1.83;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	786	787	2	+	.	ID=JG330512.1.84;note=*pat pattern:CG
+JG330512.1	fuzznuc	nucleotide_motif	789	790	2	+	.	ID=JG330512.1.85;note=*pat pattern:CG
+##gff-version 3
+##sequence-region JG337499.1 1 730
+#!Date 2023-05-11
+#!Type DNA
+#!Source-version EMBOSS 6.6.0.0
+JG337499.1	fuzznuc	nucleotide_motif	49	50	2	+	.	ID=JG337499.1.1;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	84	85	2	+	.	ID=JG337499.1.2;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	98	99	2	+	.	ID=JG337499.1.3;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	105	106	2	+	.	ID=JG337499.1.4;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	129	130	2	+	.	ID=JG337499.1.5;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	169	170	2	+	.	ID=JG337499.1.6;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	180	181	2	+	.	ID=JG337499.1.7;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	241	242	2	+	.	ID=JG337499.1.8;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	256	257	2	+	.	ID=JG337499.1.9;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	264	265	2	+	.	ID=JG337499.1.10;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	278	279	2	+	.	ID=JG337499.1.11;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	285	286	2	+	.	ID=JG337499.1.12;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	301	302	2	+	.	ID=JG337499.1.13;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	325	326	2	+	.	ID=JG337499.1.14;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	332	333	2	+	.	ID=JG337499.1.15;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	342	343	2	+	.	ID=JG337499.1.16;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	402	403	2	+	.	ID=JG337499.1.17;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	420	421	2	+	.	ID=JG337499.1.18;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	427	428	2	+	.	ID=JG337499.1.19;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	435	436	2	+	.	ID=JG337499.1.20;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	555	556	2	+	.	ID=JG337499.1.21;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	591	592	2	+	.	ID=JG337499.1.22;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	601	602	2	+	.	ID=JG337499.1.23;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	625	626	2	+	.	ID=JG337499.1.24;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	636	637	2	+	.	ID=JG337499.1.25;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	640	641	2	+	.	ID=JG337499.1.26;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	664	665	2	+	.	ID=JG337499.1.27;note=*pat pattern:CG
+JG337499.1	fuzznuc	nucleotide_motif	726	727	2	+	.	ID=JG337499.1.28;note=*pat pattern:CG
+##gff-version 3
+##sequence-region JN083051.1 1 1300
+#!Date 2023-05-11
+#!Type DNA
+#!Source-version EMBOSS 6.6.0.0
+JN083051.1	fuzznuc	nucleotide_motif	6	7	2	+	.	ID=JN083051.1.1;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	18	19	2	+	.	ID=JN083051.1.2;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	21	22	2	+	.	ID=JN083051.1.3;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	29	30	2	+	.	ID=JN083051.1.4;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	33	34	2	+	.	ID=JN083051.1.5;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	51	52	2	+	.	ID=JN083051.1.6;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	61	62	2	+	.	ID=JN083051.1.7;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	66	67	2	+	.	ID=JN083051.1.8;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	117	118	2	+	.	ID=JN083051.1.9;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	122	123	2	+	.	ID=JN083051.1.10;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	130	131	2	+	.	ID=JN083051.1.11;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	144	145	2	+	.	ID=JN083051.1.12;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	182	183	2	+	.	ID=JN083051.1.13;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	187	188	2	+	.	ID=JN083051.1.14;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	196	197	2	+	.	ID=JN083051.1.15;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	213	214	2	+	.	ID=JN083051.1.16;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	237	238	2	+	.	ID=JN083051.1.17;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	240	241	2	+	.	ID=JN083051.1.18;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	259	260	2	+	.	ID=JN083051.1.19;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	264	265	2	+	.	ID=JN083051.1.20;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	294	295	2	+	.	ID=JN083051.1.21;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	314	315	2	+	.	ID=JN083051.1.22;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	345	346	2	+	.	ID=JN083051.1.23;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	353	354	2	+	.	ID=JN083051.1.24;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	371	372	2	+	.	ID=JN083051.1.25;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	380	381	2	+	.	ID=JN083051.1.26;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	384	385	2	+	.	ID=JN083051.1.27;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	414	415	2	+	.	ID=JN083051.1.28;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	428	429	2	+	.	ID=JN083051.1.29;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	431	432	2	+	.	ID=JN083051.1.30;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	455	456	2	+	.	ID=JN083051.1.31;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	465	466	2	+	.	ID=JN083051.1.32;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	486	487	2	+	.	ID=JN083051.1.33;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	510	511	2	+	.	ID=JN083051.1.34;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	540	541	2	+	.	ID=JN083051.1.35;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	579	580	2	+	.	ID=JN083051.1.36;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	590	591	2	+	.	ID=JN083051.1.37;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	594	595	2	+	.	ID=JN083051.1.38;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	597	598	2	+	.	ID=JN083051.1.39;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	645	646	2	+	.	ID=JN083051.1.40;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	654	655	2	+	.	ID=JN083051.1.41;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	666	667	2	+	.	ID=JN083051.1.42;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	668	669	2	+	.	ID=JN083051.1.43;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	696	697	2	+	.	ID=JN083051.1.44;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	720	721	2	+	.	ID=JN083051.1.45;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	736	737	2	+	.	ID=JN083051.1.46;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	771	772	2	+	.	ID=JN083051.1.47;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	777	778	2	+	.	ID=JN083051.1.48;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	803	804	2	+	.	ID=JN083051.1.49;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	840	841	2	+	.	ID=JN083051.1.50;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	845	846	2	+	.	ID=JN083051.1.51;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	885	886	2	+	.	ID=JN083051.1.52;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	889	890	2	+	.	ID=JN083051.1.53;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	903	904	2	+	.	ID=JN083051.1.54;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	939	940	2	+	.	ID=JN083051.1.55;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	941	942	2	+	.	ID=JN083051.1.56;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	958	959	2	+	.	ID=JN083051.1.57;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	1014	1015	2	+	.	ID=JN083051.1.58;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	1029	1030	2	+	.	ID=JN083051.1.59;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	1047	1048	2	+	.	ID=JN083051.1.60;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	1056	1057	2	+	.	ID=JN083051.1.61;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	1095	1096	2	+	.	ID=JN083051.1.62;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	1100	1101	2	+	.	ID=JN083051.1.63;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	1107	1108	2	+	.	ID=JN083051.1.64;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	1128	1129	2	+	.	ID=JN083051.1.65;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	1130	1131	2	+	.	ID=JN083051.1.66;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	1160	1161	2	+	.	ID=JN083051.1.67;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	1229	1230	2	+	.	ID=JN083051.1.68;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	1259	1260	2	+	.	ID=JN083051.1.69;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	1276	1277	2	+	.	ID=JN083051.1.70;note=*pat pattern:CG
+JN083051.1	fuzznuc	nucleotide_motif	1288	1289	2	+	.	ID=JN083051.1.71;note=*pat pattern:CG
+##gff-version 3
+##sequence-region JG314435.1 1 778
+#!Date 2023-05-11
+#!Type DNA
+#!Source-version EMBOSS 6.6.0.0
+JG314435.1	fuzznuc	nucleotide_motif	63	64	2	+	.	ID=JG314435.1.1;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	75	76	2	+	.	ID=JG314435.1.2;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	90	91	2	+	.	ID=JG314435.1.3;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	112	113	2	+	.	ID=JG314435.1.4;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	131	132	2	+	.	ID=JG314435.1.5;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	136	137	2	+	.	ID=JG314435.1.6;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	153	154	2	+	.	ID=JG314435.1.7;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	174	175	2	+	.	ID=JG314435.1.8;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	255	256	2	+	.	ID=JG314435.1.9;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	290	291	2	+	.	ID=JG314435.1.10;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	334	335	2	+	.	ID=JG314435.1.11;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	356	357	2	+	.	ID=JG314435.1.12;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	363	364	2	+	.	ID=JG314435.1.13;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	372	373	2	+	.	ID=JG314435.1.14;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	384	385	2	+	.	ID=JG314435.1.15;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	387	388	2	+	.	ID=JG314435.1.16;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	401	402	2	+	.	ID=JG314435.1.17;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	428	429	2	+	.	ID=JG314435.1.18;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	440	441	2	+	.	ID=JG314435.1.19;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	451	452	2	+	.	ID=JG314435.1.20;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	476	477	2	+	.	ID=JG314435.1.21;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	485	486	2	+	.	ID=JG314435.1.22;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	501	502	2	+	.	ID=JG314435.1.23;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	515	516	2	+	.	ID=JG314435.1.24;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	520	521	2	+	.	ID=JG314435.1.25;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	561	562	2	+	.	ID=JG314435.1.26;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	593	594	2	+	.	ID=JG314435.1.27;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	603	604	2	+	.	ID=JG314435.1.28;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	605	606	2	+	.	ID=JG314435.1.29;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	609	610	2	+	.	ID=JG314435.1.30;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	632	633	2	+	.	ID=JG314435.1.31;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	642	643	2	+	.	ID=JG314435.1.32;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	646	647	2	+	.	ID=JG314435.1.33;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	651	652	2	+	.	ID=JG314435.1.34;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	675	676	2	+	.	ID=JG314435.1.35;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	710	711	2	+	.	ID=JG314435.1.36;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	720	721	2	+	.	ID=JG314435.1.37;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	728	729	2	+	.	ID=JG314435.1.38;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	731	732	2	+	.	ID=JG314435.1.39;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	753	754	2	+	.	ID=JG314435.1.40;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	758	759	2	+	.	ID=JG314435.1.41;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	761	762	2	+	.	ID=JG314435.1.42;note=*pat pattern:CG
+JG314435.1	fuzznuc	nucleotide_motif	777	778	2	+	.	ID=JG314435.1.43;note=*pat pattern:CG
+##gff-version 3
+##sequence-region JG344999.1 1 778
+#!Date 2023-05-11
+#!Type DNA
+#!Source-version EMBOSS 6.6.0.0
+JG344999.1	fuzznuc	nucleotide_motif	41	42	2	+	.	ID=JG344999.1.1;note=*pat pattern:CG
+JG344999.1	fuzznuc	nucleotide_motif	43	44	2	+	.	ID=JG344999.1.2;note=*pat pattern:CG
+JG344999.1	fuzznuc	nucleotide_motif	46	47	2	+	.	ID=JG344999.1.3;note=*pat pattern:CG
+JG344999.1	fuzznuc	nucleotide_motif	185	186	2	+	.	ID=JG344999.1.4;note=*pat pattern:CG
+JG344999.1	fuzznuc	nucleotide_motif	270	271	2	+	.	ID=JG344999.1.5;note=*pat pattern:CG
+JG344999.1	fuzznuc	nucleotide_motif	605	606	2	+	.	ID=JG344999.1.6;note=*pat pattern:CG
+JG344999.1	fuzznuc	nucleotide_motif	639	640	2	+	.	ID=JG344999.1.7;note=*pat pattern:CG
+JG344999.1	fuzznuc	nucleotide_motif	665	666	2	+	.	ID=JG344999.1.8;note=*pat pattern:CG
+JG344999.1	fuzznuc	nucleotide_motif	695	696	2	+	.	ID=JG344999.1.9;note=*pat pattern:CG
+JG344999.1	fuzznuc	nucleotide_motif	758	759	2	+	.	ID=JG344999.1.10;note=*pat pattern:CG
+JG344999.1	fuzznuc	nucleotide_motif	769	770	2	+	.	ID=JG344999.1.11;note=*pat pattern:CG
+##gff-version 3
+##sequence-region JG344079.1 1 693
+#!Date 2023-05-11
+#!Type DNA
+#!Source-version EMBOSS 6.6.0.0
+JG344079.1	fuzznuc	nucleotide_motif	1	2	2	+	.	ID=JG344079.1.1;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	4	5	2	+	.	ID=JG344079.1.2;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	6	7	2	+	.	ID=JG344079.1.3;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	41	42	2	+	.	ID=JG344079.1.4;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	59	60	2	+	.	ID=JG344079.1.5;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	108	109	2	+	.	ID=JG344079.1.6;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	112	113	2	+	.	ID=JG344079.1.7;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	157	158	2	+	.	ID=JG344079.1.8;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	174	175	2	+	.	ID=JG344079.1.9;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	184	185	2	+	.	ID=JG344079.1.10;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	189	190	2	+	.	ID=JG344079.1.11;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	197	198	2	+	.	ID=JG344079.1.12;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	209	210	2	+	.	ID=JG344079.1.13;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	219	220	2	+	.	ID=JG344079.1.14;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	295	296	2	+	.	ID=JG344079.1.15;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	315	316	2	+	.	ID=JG344079.1.16;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	318	319	2	+	.	ID=JG344079.1.17;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	323	324	2	+	.	ID=JG344079.1.18;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	337	338	2	+	.	ID=JG344079.1.19;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	339	340	2	+	.	ID=JG344079.1.20;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	354	355	2	+	.	ID=JG344079.1.21;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	366	367	2	+	.	ID=JG344079.1.22;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	375	376	2	+	.	ID=JG344079.1.23;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	381	382	2	+	.	ID=JG344079.1.24;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	396	397	2	+	.	ID=JG344079.1.25;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	406	407	2	+	.	ID=JG344079.1.26;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	414	415	2	+	.	ID=JG344079.1.27;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	418	419	2	+	.	ID=JG344079.1.28;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	429	430	2	+	.	ID=JG344079.1.29;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	436	437	2	+	.	ID=JG344079.1.30;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	442	443	2	+	.	ID=JG344079.1.31;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	444	445	2	+	.	ID=JG344079.1.32;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	459	460	2	+	.	ID=JG344079.1.33;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	471	472	2	+	.	ID=JG344079.1.34;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	477	478	2	+	.	ID=JG344079.1.35;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	480	481	2	+	.	ID=JG344079.1.36;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	526	527	2	+	.	ID=JG344079.1.37;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	535	536	2	+	.	ID=JG344079.1.38;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	537	538	2	+	.	ID=JG344079.1.39;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	570	571	2	+	.	ID=JG344079.1.40;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	573	574	2	+	.	ID=JG344079.1.41;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	609	610	2	+	.	ID=JG344079.1.42;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	611	612	2	+	.	ID=JG344079.1.43;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	620	621	2	+	.	ID=JG344079.1.44;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	628	629	2	+	.	ID=JG344079.1.45;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	630	631	2	+	.	ID=JG344079.1.46;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	650	651	2	+	.	ID=JG344079.1.47;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	666	667	2	+	.	ID=JG344079.1.48;note=*pat pattern:CG
+JG344079.1	fuzznuc	nucleotide_motif	669	670	2	+	.	ID=JG344079.1.49;note=*pat pattern:CG
+##gff-version 3
+##sequence-region JG372176.1 1 676
+#!Date 2023-05-11
+#!Type DNA
+#!Source-version EMBOSS 6.6.0.0
+JG372176.1	fuzznuc	nucleotide_motif	1	2	2	+	.	ID=JG372176.1.1;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	18	19	2	+	.	ID=JG372176.1.2;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	71	72	2	+	.	ID=JG372176.1.3;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	79	80	2	+	.	ID=JG372176.1.4;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	98	99	2	+	.	ID=JG372176.1.5;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	126	127	2	+	.	ID=JG372176.1.6;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	130	131	2	+	.	ID=JG372176.1.7;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	139	140	2	+	.	ID=JG372176.1.8;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	148	149	2	+	.	ID=JG372176.1.9;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	236	237	2	+	.	ID=JG372176.1.10;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	243	244	2	+	.	ID=JG372176.1.11;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	249	250	2	+	.	ID=JG372176.1.12;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	262	263	2	+	.	ID=JG372176.1.13;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	311	312	2	+	.	ID=JG372176.1.14;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	323	324	2	+	.	ID=JG372176.1.15;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	327	328	2	+	.	ID=JG372176.1.16;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	384	385	2	+	.	ID=JG372176.1.17;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	404	405	2	+	.	ID=JG372176.1.18;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	434	435	2	+	.	ID=JG372176.1.19;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	441	442	2	+	.	ID=JG372176.1.20;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	443	444	2	+	.	ID=JG372176.1.21;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	490	491	2	+	.	ID=JG372176.1.22;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	527	528	2	+	.	ID=JG372176.1.23;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	598	599	2	+	.	ID=JG372176.1.24;note=*pat pattern:CG
+JG372176.1	fuzznuc	nucleotide_motif	625	626	2	+	.	ID=JG372176.1.25;note=*pat pattern:CG
+##gff-version 3
+##sequence-region JG328865.1 1 757
+#!Date 2023-05-11
+#!Type DNA
+#!Source-version EMBOSS 6.6.0.0
+JG328865.1	fuzznuc	nucleotide_motif	46	47	2	+	.	ID=JG328865.1.1;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	71	72	2	+	.	ID=JG328865.1.2;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	149	150	2	+	.	ID=JG328865.1.3;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	226	227	2	+	.	ID=JG328865.1.4;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	263	264	2	+	.	ID=JG328865.1.5;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	308	309	2	+	.	ID=JG328865.1.6;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	326	327	2	+	.	ID=JG328865.1.7;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	351	352	2	+	.	ID=JG328865.1.8;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	376	377	2	+	.	ID=JG328865.1.9;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	383	384	2	+	.	ID=JG328865.1.10;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	403	404	2	+	.	ID=JG328865.1.11;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	425	426	2	+	.	ID=JG328865.1.12;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	440	441	2	+	.	ID=JG328865.1.13;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	452	453	2	+	.	ID=JG328865.1.14;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	454	455	2	+	.	ID=JG328865.1.15;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	458	459	2	+	.	ID=JG328865.1.16;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	506	507	2	+	.	ID=JG328865.1.17;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	524	525	2	+	.	ID=JG328865.1.18;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	530	531	2	+	.	ID=JG328865.1.19;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	533	534	2	+	.	ID=JG328865.1.20;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	540	541	2	+	.	ID=JG328865.1.21;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	560	561	2	+	.	ID=JG328865.1.22;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	632	633	2	+	.	ID=JG328865.1.23;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	637	638	2	+	.	ID=JG328865.1.24;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	641	642	2	+	.	ID=JG328865.1.25;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	662	663	2	+	.	ID=JG328865.1.26;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	664	665	2	+	.	ID=JG328865.1.27;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	674	675	2	+	.	ID=JG328865.1.28;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	677	678	2	+	.	ID=JG328865.1.29;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	689	690	2	+	.	ID=JG328865.1.30;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	716	717	2	+	.	ID=JG328865.1.31;note=*pat pattern:CG
+JG328865.1	fuzznuc	nucleotide_motif	726	727	2	+	.	ID=JG328865.1.32;note=*pat pattern:CG
+##gff-version 3
+##sequence-region JG317363.1 1 694
+#!Date 2023-05-11
+#!Type DNA
+#!Source-version EMBOSS 6.6.0.0
+JG317363.1	fuzznuc	nucleotide_motif	2	3	2	+	.	ID=JG317363.1.1;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	19	20	2	+	.	ID=JG317363.1.2;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	21	22	2	+	.	ID=JG317363.1.3;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	36	37	2	+	.	ID=JG317363.1.4;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	85	86	2	+	.	ID=JG317363.1.5;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	115	116	2	+	.	ID=JG317363.1.6;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	123	124	2	+	.	ID=JG317363.1.7;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	136	137	2	+	.	ID=JG317363.1.8;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	145	146	2	+	.	ID=JG317363.1.9;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	177	178	2	+	.	ID=JG317363.1.10;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	186	187	2	+	.	ID=JG317363.1.11;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	192	193	2	+	.	ID=JG317363.1.12;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	225	226	2	+	.	ID=JG317363.1.13;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	228	229	2	+	.	ID=JG317363.1.14;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	249	250	2	+	.	ID=JG317363.1.15;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	257	258	2	+	.	ID=JG317363.1.16;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	267	268	2	+	.	ID=JG317363.1.17;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	352	353	2	+	.	ID=JG317363.1.18;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	355	356	2	+	.	ID=JG317363.1.19;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	361	362	2	+	.	ID=JG317363.1.20;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	400	401	2	+	.	ID=JG317363.1.21;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	404	405	2	+	.	ID=JG317363.1.22;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	408	409	2	+	.	ID=JG317363.1.23;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	424	425	2	+	.	ID=JG317363.1.24;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	427	428	2	+	.	ID=JG317363.1.25;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	435	436	2	+	.	ID=JG317363.1.26;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	445	446	2	+	.	ID=JG317363.1.27;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	487	488	2	+	.	ID=JG317363.1.28;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	516	517	2	+	.	ID=JG317363.1.29;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	546	547	2	+	.	ID=JG317363.1.30;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	563	564	2	+	.	ID=JG317363.1.31;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	566	567	2	+	.	ID=JG317363.1.32;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	572	573	2	+	.	ID=JG317363.1.33;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	611	612	2	+	.	ID=JG317363.1.34;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	624	625	2	+	.	ID=JG317363.1.35;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	635	636	2	+	.	ID=JG317363.1.36;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	637	638	2	+	.	ID=JG317363.1.37;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	640	641	2	+	.	ID=JG317363.1.38;note=*pat pattern:CG
+JG317363.1	fuzznuc	nucleotide_motif	685	686	2	+	.	ID=JG317363.1.39;note=*pat pattern:CG
+##gff-version 3
+##sequence-region JG383043.1 1 699
+#!Date 2023-05-11
+#!Type DNA
+#!Source-version EMBOSS 6.6.0.0
+JG383043.1	fuzznuc	nucleotide_motif	24	25	2	+	.	ID=JG383043.1.1;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	26	27	2	+	.	ID=JG383043.1.2;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	54	55	2	+	.	ID=JG383043.1.3;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	65	66	2	+	.	ID=JG383043.1.4;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	90	91	2	+	.	ID=JG383043.1.5;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	107	108	2	+	.	ID=JG383043.1.6;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	119	120	2	+	.	ID=JG383043.1.7;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	166	167	2	+	.	ID=JG383043.1.8;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	172	173	2	+	.	ID=JG383043.1.9;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	202	203	2	+	.	ID=JG383043.1.10;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	205	206	2	+	.	ID=JG383043.1.11;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	220	221	2	+	.	ID=JG383043.1.12;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	232	233	2	+	.	ID=JG383043.1.13;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	306	307	2	+	.	ID=JG383043.1.14;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	321	322	2	+	.	ID=JG383043.1.15;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	325	326	2	+	.	ID=JG383043.1.16;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	331	332	2	+	.	ID=JG383043.1.17;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	391	392	2	+	.	ID=JG383043.1.18;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	396	397	2	+	.	ID=JG383043.1.19;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	409	410	2	+	.	ID=JG383043.1.20;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	415	416	2	+	.	ID=JG383043.1.21;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	458	459	2	+	.	ID=JG383043.1.22;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	464	465	2	+	.	ID=JG383043.1.23;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	468	469	2	+	.	ID=JG383043.1.24;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	476	477	2	+	.	ID=JG383043.1.25;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	493	494	2	+	.	ID=JG383043.1.26;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	544	545	2	+	.	ID=JG383043.1.27;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	619	620	2	+	.	ID=JG383043.1.28;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	625	626	2	+	.	ID=JG383043.1.29;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	631	632	2	+	.	ID=JG383043.1.30;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	652	653	2	+	.	ID=JG383043.1.31;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	654	655	2	+	.	ID=JG383043.1.32;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	666	667	2	+	.	ID=JG383043.1.33;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	675	676	2	+	.	ID=JG383043.1.34;note=*pat pattern:CG
+JG383043.1	fuzznuc	nucleotide_motif	682	683	2	+	.	ID=JG383043.1.35;note=*pat pattern:CG
