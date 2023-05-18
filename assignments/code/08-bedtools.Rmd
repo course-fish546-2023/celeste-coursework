@@ -1,0 +1,57 @@
+---
+title: "BEDtools"
+author: "Celeste Valdivia"
+date: "2023-05-18"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Curling in the bed file with gene information.
+```{r, engine='bash'}
+cd ../data 
+curl -O https://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_Gnomon_genes.bed
+```
+
+Converting the bam file to bed
+```{r, engine='bash'}
+/home/shared/bedtools2/bin/bedtools bamtobed -i ../data/19F_R1_val_1_bismark_bt2_pe.deduplicated.sorted.bam > ../output/08-19F.bed
+```
+Getting coverage of sequence reads:
+```{r, engine='bash'}
+/home/shared/bedtools2/bin/bedtools coverage \
+-a ../data/C_virginica-3.0_Gnomon_genes.bed \
+-b ../output/08-19F.bed \
+> ../output/08-gene-19F-coverage.out
+```
+
+Curling bed files of transposable elements and lncRNA:
+```{r, engine='bash', eval=F}
+cd ../data
+curl -O http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_gene.gff 
+curl -O http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_rm.te.bed 
+curl -O http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_lncRNA.gff
+```
+Intersect command in bedtools:
+```{r, engine='bash'}
+/home/shared/bedtools2/bin/bedtools intersect \
+-a ../data/cgigas_uk_roslin_v1_gene.gff \
+-b ../data/cgigas_uk_roslin_v1_rm.te.bed \
+> ../output/08-gene-TE-intersect.out
+
+head -2 ../output/08-gene-TE-intersect.out
+```
+Closest command in bedtools:
+```{r, engine='bash'}
+/home/shared/bedtools2/bin/bedtools closest \
+-a ../data/cgigas_uk_roslin_v1_lncRNA.gff \
+-b ../data/cgigas_uk_roslin_v1_gene.gff \
+> ../output/08-lnc-gene-closet.out
+```
+
+
+
+
+
