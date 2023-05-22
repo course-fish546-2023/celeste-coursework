@@ -18,3 +18,8 @@ abundance.tsv
 *.txt
 *.gtf
 *.fai
+*.out
+*.bed
+*.vcf
+*.gff
+rsconnect
